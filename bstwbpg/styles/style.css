@@ -1,0 +1,251 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"); */
+
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins&family=Ubuntu+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+}
+
+::selection {
+    color: yellow;
+    background-color: black;
+}
+
+.bumbum {
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: 5px 5px 5px gray;
+}
+
+.bestie-black {
+    color: yellow;
+}
+
+.bestie-yellow {
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: yellow;
+    box-shadow: inset 0 0 5px black; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px white;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: blue;
+}
+
+body, html {
+    min-height: 100vh;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, black, black, yellow, yellow);
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    cursor: url("cursor/Help\ Select.cur"), auto;
+    /* background: linear-gradient(#3073b2, #7fbad4, #b6cfda); */
+}
+
+.text-underline:hover {
+    text-decoration: underline;
+}
+
+.bgimg1, .bgimg2, .bgimg3, .bgimg4 {
+    position: relative;
+    opacity: 0.35;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg1 {
+    background-image: url("parallaximages/buildingadrawing.png");
+    min-height: 100%;
+}
+
+.bgimg2 {
+    background-image: url("parallaximages/buildinga.jpg");
+    min-height: 100%;
+}
+
+.bgimg3 {
+    background-image: url("parallaximages/bldgafrontdrawing.png");
+    min-height: 100%;
+}
+
+.bgimg4 {
+    background-image: url("parallaximages/bldgafront.png");
+    min-height: 100%;
+}
+
+.txt-box {
+    width: 100%;
+    background: linear-gradient(to bottom right, #3073b2, #7fbad4);
+    height: 250px;
+    padding: 50px 80px;
+    text-align: justify;
+    text-align: center;
+}
+
+#bestieLogo {
+    display: flex;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    
+    transition: 0.65s;
+    visibility: visible;
+  }
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+.logofied:hover {
+    color: yellow;
+}
+
+header .logofied {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+nav ul li a:hover{
+    background: #fff;
+    color: #3073b2;
+}
+
+nav ul li a.active {
+    background: #fff;
+    color: #3073b2;
+}
+
+.nocopy {
+    user-select: none;
+}
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, black, black, black, yellow, yellow);
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.logo {
+    display: grid;
+    bottom: -20px;
+    opacity: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+#about {
+    padding: 10px;
+}
+
+#features {
+    padding: 10px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.content{
+    padding: 16px;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}

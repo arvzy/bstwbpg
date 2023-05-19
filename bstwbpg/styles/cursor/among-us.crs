@@ -1,0 +1,51 @@
+﻿[Arrow]
+Path=Black pointer.cur
+
+[Help]
+Path=purple help pointer.cur
+
+[AppStarting]
+Path=Blue works in background.cur
+
+[Wait]
+Path=Yellow busy.cur
+
+[Crosshair]
+Path=Green precision.cur
+
+[IBeam]
+Path=White type.cur
+
+[NWPen]
+Path=Brown pencil.cur
+
+[No]
+Path=Dark Green unavailable.cur
+
+[SizeNS]
+Path=Orange vertical.cur
+
+[SizeWE]
+Path=Orange horizontal.cur
+
+[SizeNWSE]
+Path=Orange diagonal 1.cur
+
+[SizeNESW]
+Path=Orange diagonal 2.cur
+
+[SizeAll]
+Path=Cyan move.cur
+
+[UpArrow]
+Path=Grey cursor.cur
+
+[Hand]
+Path=Red select.cur
+
+[Pin]
+Path=Red location select.cur
+
+[Person]
+Path=Red person select.cur
+

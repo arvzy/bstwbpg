@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins&family=Ubuntu+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body, html {
+    min-height: 100vh;
+    height: 100%;
+    background: linear-gradient(black, yellow);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+
+h1 {
+    background: -webkit-linear-gradient(white, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.bgimg1, .bgimg2, .bgimg3, .bgimg4, .bgimg5, .bgimg6, .bgimg7, .bgimg8, .bgimg9, .bgimg10, .bgimg11 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg1 {
+    background: linear-gradient(black, yellow);
+    min-height: 100%;
+    
+}
+
+.bgimg2 {
+    background-image: url("contributors/j-rllns.jpg");
+    min-height: 100%;
+    opacity: 0.35;
+}
+
+.bgimg3 {
+    background-image: url("contributors/mj-rqz.jpg");
+    min-height: 100%;
+    opacity: 0.35;
+}
+
+.bgimg4 {
+    background-image: url("contributors/j-rys.jpg");
+    min-height: 100%;
+    opacity: 0.35;
+}
+
+.bgimg5 {
+    background-image: url("contributors/md-mrt.jpg");
+    min-height: 100%;
+    opacity: 0.35;
+}
+
+.bgimg6 {
+    background-image: url("contributors/r-sgn.jpg");
+    min-height: 100%;
+    opacity: 0.35;
+}
+
+.bgimg7 {
+    background-image: url("contributors/a-rnld.jpg");
+    min-height: 100%;
+    opacity: 0.35;
+}
+
+.bgimg8 {
+    background-image: url("contributors/m-lcr.jpg");
+    min-height: 100%;
+    opacity: 0.35;
+}
+
+.bgimg9 {
+    background-image: url("contributors/la-brd.jpg");
+    min-height: 100%;
+    opacity: 0.35;
+}
+
+.bgimg10 {
+    background-image: url("contributors/ek-rys.jpg");
+    min-height: 100%;
+    opacity: 0.35;
+}
+
+.bgimg11 {
+    background-image: url("contributors/a-mpcn.jpg");
+    min-height: 100%;
+    opacity: 0.35;
+}
+
+.img-grid {
+    display: grid;
+    margin-top: 15px;
+    justify-content: space-evenly;
+    row-gap: 40px;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.img-grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-img {
+    border-radius: 50px;
+    border-style: inset;
+    border-color: yellow;
+    box-shadow: 10px 10px 100px black;
+    height: 201px;
+    width: 200px;
+    object-fit: cover;
+    transition: 0.30s ease;
+}
+
+.cont-img:hover {
+    height: 221px;
+    width: 220px;
+    transition: 0.30s;
+}
+
+.cont-img:active {
+    height: 225px;
+    width: 224px;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.msg {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

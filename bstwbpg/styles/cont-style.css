@@ -124,7 +124,7 @@ h1 {
 
 .cont-img {
     border-radius: 50px;
-    border-style: inset;
+    border-style: solid;
     border-color: yellow;
     box-shadow: 10px 10px 100px black;
     height: 201px;
@@ -163,6 +163,4 @@ h1 {
     height: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
 }

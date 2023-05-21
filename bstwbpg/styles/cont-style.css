@@ -21,7 +21,7 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 50px;
-    padding: 10px;
+    margin-top: 30px;
 }
 
 .bgimg1, .bgimg2, .bgimg3, .bgimg4, .bgimg5, .bgimg6, .bgimg7, .bgimg8, .bgimg9, .bgimg10, .bgimg11 {
@@ -33,9 +33,9 @@ h1 {
 }
 
 .bgimg1 {
-    background: linear-gradient(black, yellow);
+    background-image: url("parallaximages/romhouse.jpg");
     min-height: 100%;
-    
+    opacity: 0.35;
 }
 
 .bgimg2 {
@@ -126,7 +126,7 @@ h1 {
     border-radius: 50px;
     border-style: solid;
     border-color: yellow;
-    box-shadow: 10px 10px 100px black;
+    /* box-shadow: 10px 10px 100px black; */
     height: 201px;
     width: 200px;
     object-fit: cover;
@@ -136,6 +136,7 @@ h1 {
 .cont-img:hover {
     height: 221px;
     width: 220px;
+    box-shadow: 5px 5px 100px yellow;
     transition: 0.30s;
 }
 
@@ -154,7 +155,7 @@ h1 {
     height: 100vh;
 }
 
-.msg {
+.content {
     color: white;
     font-size: 30px;
     position: absolute;
@@ -163,4 +164,6 @@ h1 {
     height: 100%;
     top: 0;
     left: 0;
+    padding: 40px;
+    box-sizing: border-box;
 }

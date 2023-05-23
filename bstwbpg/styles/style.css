@@ -17,13 +17,46 @@
 }
 
 .bumbum {
+    position: relative;
+    line-height: 1.2;
     font-size: 4rem;
-    font-weight: 500;
-    text-shadow: 5px 5px 5px gray;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px black;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.pogger {
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes animate3D {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+.spinny {
+    position: relative;
+    width: 512px;
+    height: 512px;
+    display: block;
+    justify-content: end;
+    align-items: center;
+    animation: animate3D 5s linear infinite;
 }
 
 .bestie-black {
     color: yellow;
+}
+
+.bestie-black::selection {
+    color: white;
+    background-color: black;
 }
 
 .bestie-yellow {
@@ -31,35 +64,32 @@
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 15px;
 }
   
   /* Track */
 ::-webkit-scrollbar-track {
-    background: yellow;
-    box-shadow: inset 0 0 5px black; 
+    background: #b6cfda;
 }
    
   /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 20px;
-    box-shadow: inset 0 0 5px white;
+    background: #7fbad4;
 }
   
   /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: blue;
+    background: #3073b2;
 }
 
 body, html {
     min-height: 100vh;
     height: 100%;
-    background: linear-gradient(#3073b2, #7fbad4, #b6cfda);
-    /* background-image: linear-gradient(to bottom right, black, black, yellow, yellow); */
+    /* background: linear-gradient(#3073b2, #7fbad4, #b6cfda); */
+    background-image: linear-gradient(to bottom right, black, black, yellow, yellow);
     background-size: 100% 100vh;
     background-attachment: fixed;
-    cursor: url("cursor/Help\ Select.cur"), auto;
+    /* cursor: url("cursor/Help\ Select.cur"), auto; */
     
 }
 
@@ -124,8 +154,8 @@ body, html {
     border-radius: 6px;
  
   /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
+    position: absolute;
+    z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
@@ -156,6 +186,19 @@ header .logofied {
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 998;
 }
 
 nav ul {
@@ -197,7 +240,7 @@ nav ul li a.active {
     top: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom right, black, black, black, yellow, yellow);
+    background: linear-gradient(#3073b2, #7fbad4, #b6cfda);
     transition: 1s;
 }
 

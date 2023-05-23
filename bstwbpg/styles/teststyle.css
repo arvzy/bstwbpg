@@ -18,6 +18,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 999;
+    transition: 3.5s;
 }
 
 nav ul {
@@ -44,6 +45,7 @@ nav ul li a:hover {
 
 nav.background {
     background-color: gray;
+    transition: 0.35s;
 }
 
 .container {
@@ -61,7 +63,7 @@ nav.background {
 }
 
 .prlx-bg-1{
-    background-image: url(parallaximages/ganggang.jpg);
+    background-image: url(contributors/ek-rys-br.jpg);
     opacity: 0.7;
     min-height: 100%;
 }

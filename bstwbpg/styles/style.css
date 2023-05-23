@@ -33,19 +33,24 @@
 
 @keyframes animate3D {
     0% {
-      transform: rotateY(0deg);
+      transform: perspective(500px) rotateY(0deg);
     }
+
+    50% {
+        transform: perspective(500px) rotateY(180deg);
+    }
+
     100% {
-      transform: rotateY(360deg);
+      transform: perspective(500px) rotateY(360deg);
     }
   }
 
 .spinny {
     position: relative;
-    width: 512px;
-    height: 512px;
+    width: 340px;
+    transform-style: preserve-3d;
     display: block;
-    justify-content: end;
+    justify-items: center;
     align-items: center;
     animation: animate3D 5s linear infinite;
 }
@@ -56,7 +61,7 @@
 
 .bestie-black::selection {
     color: white;
-    background-color: black;
+    background-color: rgb(34, 32, 32);
 }
 
 .bestie-yellow {
@@ -190,6 +195,7 @@ header .logofied {
 
 nav {
     position: absolute;
+    background-color: transparent;
     top: 0;
     left: 0;
     width: 100%;
@@ -197,8 +203,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: transparent;
     z-index: 998;
+    transition: 0.35s;
 }
 
 nav ul {
@@ -214,19 +220,25 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding: 6px 15px;
+    padding: 15px 20px;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 nav ul li a:hover{
-    background: #fff;
-    color: #3073b2;
+    background: black;
+    color: yellow;
+    transition: 0.2s;
 }
 
 nav ul li a.active {
-    background: #fff;
-    color: #3073b2;
+    background: black;
+    color: yellow;
+}
+
+nav.nav-bg {
+    background: black;
+    transition: 0.35s;
 }
 
 .nocopy {

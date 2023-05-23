@@ -74,3 +74,12 @@ function stickyHeader() {
     }
 
 }
+
+$(window).scroll(function(){
+    if($(window).scrollTop()){
+        $("nav").addClass("nav-bg");
+    }
+    else{
+        $("nav").removeClass("nav-bg");
+    }
+})

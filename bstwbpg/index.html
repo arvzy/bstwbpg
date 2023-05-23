@@ -17,23 +17,24 @@
         </h1>
     </div> -->
 
-    <nav id="top-header">
+    <nav class="nav-bg" id="top-header">
         <div id="bestieLogo">
             <br>
             <div class="tooltip">
-                <h4 class="logofied nocopy"></h4>
+                <h1 class="logofied nocopy" style="font-size: xx-large;">C O D E E Z</h1>
                 <span class="tooltiptext">Codeez be the one you're looking for?</span>
             </div>
         </div>
 
-        <ul class="text-underline">
+        <ul class="" style="font-size: 300;">
+            <li><a href="#home" onclick="openTab(event, 'Home')">Home</a></li>
             <li><a href="#about" onclick="openTab(event, 'About')">About</a></li>
             <li><a href="#features" onclick="openTab(event, 'Features')">Features</a></li>
             <li><a href="contributors.html" onclick="openTab(event, 'Contributors')">Contributors</a></li>
         </ul> 
     </nav>
 
-    <div class="bumbum">
+    <div class="bumbum" id="home">
         <header class="pogger">
             <div class="" style="padding-top: 30vh;">
                 <p>
@@ -50,8 +51,8 @@
                 </p>
             </div>
 
-            <div class="spinny" style="padding-top: 20vh;">
-                <img src="images/android-chrome-512x512.png">
+            <div style="padding-top: 20vh; padding-left: 60vh;">
+                <img class="spinny" src="images/bestie-rm-512.png">
             </div>
         </header>
     </div>
@@ -59,14 +60,8 @@
     <div class="bgimg1" id="home">
 
     </div>
-    <div class="txt-box" id="about">
-        <h2>About BESTIE</h2>
-        <p>
-            "BESTIE is an acronym that stands for Basic Electronic Stationary Terminal for Indoor Exploration. It is a software designed for a Stationary Terminal on Building A that's designed to help new students or visitors of the Academic Center as a wayfinding aid.
-        </p>
-    </div>
 
-    <div class="bgimg2">
+    <div class="bgimg2" id="about">
 
     </div>
     <div class="txt-box" id="features">
@@ -101,6 +96,7 @@
             <h2>Contact Us</h2>
         </div>
     </footer> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

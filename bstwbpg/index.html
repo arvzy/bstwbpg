@@ -36,7 +36,7 @@
 
     <div class="bumbum" id="home">
         <header class="pogger">
-            <div class="" style="padding-top: 30vh; display: block;">
+            <div class="" style="padding-top: 30vh; display: block; width: 60%;">
                 <p>
                     <span class="bestie-black">
                         BESTIE | A dedicated 
@@ -53,7 +53,7 @@
                 <button class="lm-button" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Learn More</button>
             </div>
 
-            <div style="padding-top: 20vh; padding-left: 60vh;">
+            <div style="padding-top: 20vh; width: 30%;">
                 <img class="spinny" src="images/bestie-rm-512.png">
             </div>
         </header>
@@ -67,40 +67,69 @@
         <div class="bgimg2 prlxbgimg" id="about">
         </div>
         <div class="content abtsect">
-            <h2 style="left: 0;">About BESTIE</h2>
+            <h2 style="left: 0; font-size: xx-large;">About BESTIE</h2>
             <br>
-            <p style="font-size: 200%; color: white; word-wrap: normal; padding-left: 300px; padding-right:300px; line-height: 1.2; text-shadow: 1px 1px 16px black; text-align: center; 
-            animation-name: color;
-            animation-duration: 5s;
-            animation-timing-function: ease-in;
-            animation-iteration-count: infinite;">Introducing BESTIE, The Basic Electronic Stationary Terminal for Indoor Exploration This application software aims to guide the users (students, school personnel, visitors, etc.) to their destination whilst being stationary.</p>
-            
-            <button>Features of BESTIE</button>
+            <p class="abt-text">Introducing BESTIE, The Basic Electronic Stationary Terminal for Indoor Exploration. This application software aims to guide the users (students, school personnel, visitors, etc.) to their destination whilst being stationary.</p>
+            <br>
+            <button class="ft-button" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'});">FEATURES OF BESTIE</button>
         </div>   
     </div>
-    <div class="txt-box" id="features">
-        <h2>Features of BESTIE</h2>
-        <br>
-        <p>BESTIE is actually an acronym. It stands for Basic Electronic Stationary Terminal for Indoor Environment.</p>
-        <p>Basically, it is a wayfinding application that is used inside the Academic Center of STI College Fairview</p>
-        <p>We wanted to make it available to all buildings of STI, but due to our limited time and capabilities,</p>
-        <p>we decided to create a BESTIE for the Academic Center only.</p>
-    </div>
-    <div class="bgimg3 prlxbgimg">
 
+    <section class="container">
+        <div class="bgimg3 prlxbgimg" id="features">
+        </div>
+        <!-- <div class="content featsect">
+            <h2>Features of BESTIE</h2>
+            <div style="padding:30px; background-color: rgba(0, 1, 0, 0.7); height:80vh; border-radius: 40px;">
+                <video width="400px"autoplay muted loop>
+                    <source src="styles/contributors/B-Overview.mp4">
+                </video>
+            </div>
+        </div> -->
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="styles/contributors/a-mpcn.jpg" style="width:100%">
+      <div class="text">BESTIE allows users to view the layout of the building using the Building Overview Button</div>
     </div>
-    <div class="txt-box" id="idk">
-        <h2>Features of BESTIE</h2>
-        <br>
-        <p>BESTIE is actually an acronym. It stands for Basic Electronic Stationary Terminal for Indoor Environment.</p>
-        <p>Basically, it is a wayfinding application that is used inside the Academic Center of STI College Fairview</p>
-        <p>We wanted to make it available to all buildings of STI, but due to our limited time and capabilities,</p>
-        <p>we decided to create a BESTIE for the Academic Center only.</p>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <!-- <img src="styles/contributors/ek-rys.jpg" style="width:100%"> -->
+      <video autoplay loop>
+        <source src="styles/contributors/B-Overview.mp4">
+      </video>
+      <div class="text">Caption Two</div>
     </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="styles/contributors/j-rllns.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+    </section>
+
     <div class="bgimg4 prlxbgimg">
 
     </div>
 
+    
     <!-- <div class="container">
         <div class="bgimg5 prlxbgimg">
         </div>
@@ -122,8 +151,10 @@
         </div>
     </div> -->
     
-    <footer style="height: 300px;">
-        <p>Contact Us </p>
+    <footer style="height: 300px; background-color: #1f1f1f;">
+        <div style="margin: 90px;">
+            <p>Contact my ass</p>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>

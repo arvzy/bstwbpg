@@ -17,7 +17,7 @@
         </h1>
     </div> -->
 
-    <nav class="nav-bg" id="top-header">
+    <nav class="" id="top-header">
         <div id="bestieLogo">
             <br>
             <div class="tooltip">
@@ -27,16 +27,16 @@
         </div>
 
         <ul class="" style="font-size: 300;">
-            <li><a href="#home" onclick="openTab(event, 'Home')">Home</a></li>
-            <li><a href="#about" onclick="openTab(event, 'About')">About</a></li>
-            <li><a href="#features" onclick="openTab(event, 'Features')">Features</a></li>
-            <li><a href="contributors.html" onclick="openTab(event, 'Contributors')">Contributors</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="contributors.html">Contributors</a></li>
         </ul> 
     </nav>
 
     <div class="bumbum" id="home">
         <header class="pogger">
-            <div class="" style="padding-top: 30vh;">
+            <div class="" style="padding-top: 30vh; display: block;">
                 <p>
                     <span class="bestie-black">
                         BESTIE | A dedicated 
@@ -49,6 +49,8 @@
                         software for STI College Fairview
                     </span>
                 </p>
+
+                <button class="lm-button" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Learn More</button>
             </div>
 
             <div style="padding-top: 20vh; padding-left: 60vh;">
@@ -57,12 +59,24 @@
         </header>
     </div>
 
-    <div class="bgimg1" id="home">
+    <div class="bgimg1 prlxbgimg" id="home">
 
     </div>
 
-    <div class="bgimg2" id="about">
-
+    <div class="container">
+        <div class="bgimg2 prlxbgimg" id="about">
+        </div>
+        <div class="content abtsect">
+            <h2 style="left: 0;">About BESTIE</h2>
+            <br>
+            <p style="font-size: 200%; color: white; word-wrap: normal; padding-left: 300px; padding-right:300px; line-height: 1.2; text-shadow: 1px 1px 16px black; text-align: center; 
+            animation-name: color;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;">Introducing BESTIE, The Basic Electronic Stationary Terminal for Indoor Exploration This application software aims to guide the users (students, school personnel, visitors, etc.) to their destination whilst being stationary.</p>
+            
+            <button>Features of BESTIE</button>
+        </div>   
     </div>
     <div class="txt-box" id="features">
         <h2>Features of BESTIE</h2>
@@ -72,7 +86,7 @@
         <p>We wanted to make it available to all buildings of STI, but due to our limited time and capabilities,</p>
         <p>we decided to create a BESTIE for the Academic Center only.</p>
     </div>
-    <div class="bgimg3">
+    <div class="bgimg3 prlxbgimg">
 
     </div>
     <div class="txt-box" id="idk">
@@ -83,19 +97,35 @@
         <p>We wanted to make it available to all buildings of STI, but due to our limited time and capabilities,</p>
         <p>we decided to create a BESTIE for the Academic Center only.</p>
     </div>
-    <div class="bgimg4">
+    <div class="bgimg4 prlxbgimg">
 
     </div>
-    
-    
 
-    
-    
-    <!-- <footer>
-        <div class="dabox">
-            <h2>Contact Us</h2>
+    <!-- <div class="container">
+        <div class="bgimg5 prlxbgimg">
         </div>
-    </footer> -->
+        <div class="content">
+            <h1 class="center">Choose your fighter:</h1>
+            <br>
+            <div class="img-grid">
+                <a href="#je-r"><img class="cont-img" src="styles/contributors/j-rllns.jpg"></a>
+                <a href="#mj-rqz"><img class="cont-img" src="styles/contributors/mj-rqz.jpg"></a>
+                <a href="#j-rys"><img class="cont-img" src="styles/contributors/j-rys.jpg"></a>
+                <a href="#md-mrt"><img class="cont-img" src="styles/contributors/md-mrt.jpg"></a>
+                <a href="#r-sgn"><img class="cont-img" src="styles/contributors/r-sgn.jpg"></a>
+                <a href="#a-rnld"><img class="cont-img" src="styles/contributors/a-rnld.jpg"></a>
+                <a href="#m-lcr"><img class="cont-img" src="styles/contributors/m-lcr.jpg"></a>
+                <a href="#la-brd"><img class="cont-img" src="styles/contributors/la-brd.jpg"></a>
+                <a href="#ek-rys"><img class="cont-img" src="styles/contributors/ek-rys-br.jpg"></a>
+                <a href="#a-mpcn"><img class="cont-img" src="styles/contributors/a-mpcn.jpg"></a>
+            </div>
+        </div>
+    </div> -->
+    
+    <footer style="height: 300px;">
+        <p>Contact Us </p>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="scripts/script.js"></script>
 </body>

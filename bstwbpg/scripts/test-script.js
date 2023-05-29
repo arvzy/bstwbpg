@@ -1,21 +1,24 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var pages = document.querySelectorAll(".stacked-page");
-    var currentPage = 0;
+var slideIndex = 0;
+showSlide(slideIndex);
 
-    window.addEventListener("scroll", function() {
-    var threshold = currentPage * window.innerHeight;
-    if (window.pageYOffset > threshold) {
-        pages[currentPage].style.opacity = "1";
-        currentPage++;
-        }
-    });
-});
+function changeSlide(n) {
+  showSlide(slideIndex += n);
+}
 
-$(window).scroll(function(){
-    if($(window).scrollTop()){
-        $("nav").addClass("background");
-    }
-    else{
-        $("nav").removeClass("background");
-    }
-})
+function showSlide(n) {
+  var slides = document.getElementsByClassName("slides")[0].getElementsByTagName("img");
+
+  if (n >= slides.length) {
+    slideIndex = 0;
+  }
+
+  if (n < 0) {
+    slideIndex = slides.length - 1;
+  }
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex].style.display = "block";
+}

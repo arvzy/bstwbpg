@@ -4,27 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
-    <link rel="stylesheet" href="styles/teststyle.css">
+    <title>Document</title>
 </head>
 <body>
-    <nav class="background">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contributors">Contributors</a></li>
-            <li><a href="#features">Features</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <div class="prlx-bg prlx-bg-1">
+    <div class="carousel">
+        <div class="slides">
+          <img src="styles/contributors/ek-rys.jpg" alt="Image 1">
+          <img src="styles/contributors/j-rllns.jpg" alt="Image 2">
+          <img src="styles/contributors/mj-rqz-br.jpg" alt="Image 3">
         </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
-
-    <div class="container">
-
-    </div>
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script src="scripts/test-script.js"></script>
-    </body>
+    <script src="scripts/test-script.js"></script>    
+</body>
 </html>

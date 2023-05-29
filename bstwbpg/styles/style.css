@@ -7,13 +7,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'League Spartan', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
 }
 
 ::selection {
     color: yellow;
     background-color: black;
+}
+
+.nocopy {
+    user-select: none;
 }
 
 .bumbum {
@@ -61,7 +65,7 @@
 
 .bestie-black::selection {
     color: white;
-    background-color: rgb(34, 32, 32);
+    background-color: black;
 }
 
 .bestie-yellow {
@@ -74,35 +78,76 @@
   
   /* Track */
 ::-webkit-scrollbar-track {
-    background: #b6cfda;
+    background: black;
 }
    
   /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #7fbad4;
+    background: yellow;
 }
   
   /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #3073b2;
+    background: gray;
+    transition: 2.25s;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: green;
+    transition: 2.25s;
 }
 
 body, html {
     min-height: 100vh;
     height: 100%;
     /* background: linear-gradient(#3073b2, #7fbad4, #b6cfda); */
-    background-image: linear-gradient(to bottom right, black, black, yellow, yellow);
-    background-size: 100% 100vh;
+    
     background-attachment: fixed;
     /* cursor: url("cursor/Help\ Select.cur"), auto; */
     
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.lm-button {
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: yellow;
+    color: #3073b2;
+    font-size: 18px;
+    font-weight: 900;
+    box-shadow: 1px 1px 5px black;
+    transition: 0.3s;
+}
+
+.lm-button a {
+    text-decoration: none;
+    color: black;
+}
+
+.lm-button:hover {
+    height: 55px;
+    width: 155px;
+    box-shadow: 1px 1px 15px yellow;
+    transition: 0.3s;
 }
 
 .text-underline:hover {
     text-decoration: underline;
 }
 
-.bgimg1, .bgimg2, .bgimg3, .bgimg4 {
+.prlxbgimg {
     position: relative;
     opacity: 0.35;
     background-attachment: fixed;
@@ -117,7 +162,7 @@ body, html {
 }
 
 .bgimg2 {
-    background-image: url("parallaximages/buildinga.jpg");
+    background-image: url("");
     min-height: 100%;
 }
 
@@ -128,6 +173,11 @@ body, html {
 
 .bgimg4 {
     background-image: url("parallaximages/bldgafront.png");
+    min-height: 100%;
+}
+
+.bgimg5 {
+    background-image: url("parallaximages/romhouse.jpg");
     min-height: 100%;
 }
 
@@ -155,7 +205,8 @@ body, html {
     background-color: black;
     color: #fff;
     text-align: center;
-    padding: 5px 0;
+    margin-top: 10px;
+    padding: 15px 0;
     border-radius: 6px;
  
   /* Position the tooltip text - see examples below! */
@@ -193,13 +244,15 @@ header .logofied {
     letter-spacing: 2px;
 }
 
+/* Navigation Bar*/
+
 nav {
     position: absolute;
     background-color: transparent;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 30px;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,12 +290,8 @@ nav ul li a.active {
 }
 
 nav.nav-bg {
-    background: black;
+    background: rgba(0, 0, 0, 1);
     transition: 0.35s;
-}
-
-.nocopy {
-    user-select: none;
 }
 
 .intro {
@@ -298,11 +347,44 @@ nav.nav-bg {
     width: 100%;
 }
 
-.content{
-    padding: 16px;
-    position: fixed;
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes color {
+    0% {}
+    0% {}
+    0% {}
+    0% {}
+}
+
+.content {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 .sticky + .content {
     padding-top: 102px;
 }
+
+.abtsect {
+    height: 100vh;
+    padding-top: 100px;
+    background-image: linear-gradient(-45deg, #FFFF33, #CCCE2D, #999D26, #676D20, #343C19, #010B13);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    display: blocksw;
+    align-items: center;
+    justify-content: center;
+}
+
+

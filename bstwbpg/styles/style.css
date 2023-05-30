@@ -1,6 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"); */
-
-
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins&family=Ubuntu+Mono&display=swap');
 
 * {
@@ -9,6 +6,29 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: yellow;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+    transition: 2.25s;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgb(252, 252, 78);
+    transition: 2.25s;
 }
 
 ::selection {
@@ -102,30 +122,8 @@
     color: white;
 }
 
-::-webkit-scrollbar {
-    width: 15px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: black;
-}
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: yellow;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: gray;
-    transition: 2.25s;
-}
-
-::-webkit-scrollbar-thumb:active {
-    background: rgb(252, 252, 78);
-    transition: 2.25s;
-}
 
 
 
@@ -182,14 +180,13 @@ html {
     font-size: 25px;
     font-weight: 500;
     transition: 0.3s;
-    margin-left: 25%;
 }
 
 .ft-button:hover {
-    height: 100px;
-    width: 50%;
+    height: 80px;
+    width: 360px;
     border-radius: 50px;
-    font-size: 50px;
+    font-size: 25px;
     box-shadow: 1px 1px 15px yellow;
     transition: 0.3s;
 }
@@ -401,16 +398,6 @@ nav.nav-bg {
     height: 100vh;
 }
 
-@keyframes color {
-    0% {}
-
-    0% {}
-
-    0% {}
-
-    0% {}
-}
-
 .content {
     position: absolute;
     color: white;
@@ -420,8 +407,6 @@ nav.nav-bg {
     top: 0;
     left: 0;
     padding: 40px;
-    align-items: center;
-    justify-content: center;
     box-sizing: border-box;
 }
 
@@ -431,7 +416,11 @@ nav.nav-bg {
 
 .abtsect {
     padding-top: 100px;
-    display: block;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     /* background-image: linear-gradient(to bottom right, yellow, black);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;  */
@@ -485,6 +474,7 @@ nav.nav-bg {
     box-shadow: 10px 10px rgba(0, 0, 0, 0.371);
     transform: scale(102.25%);
 }
+
 .feature-card p {
     text-align: center;
     padding-left: 30px;
@@ -496,7 +486,7 @@ nav.nav-bg {
     padding-top: 100px;
 }
 
-.img-grid {
+/* .img-grid {
     display: grid;
     margin-top: 15px;
     justify-content: space-evenly;
@@ -513,9 +503,9 @@ nav.nav-bg {
 .cont-img {
     border-radius: 50px;
     border-style: solid;
-    border-color: yellow;
+    border-color: yellow; */
     /* box-shadow: 10px 10px 100px black; */
-    height: 201px;
+ /*    height: 201px;
     width: 200px;
     object-fit: cover;
     transition: 0.30s ease;
@@ -531,13 +521,13 @@ nav.nav-bg {
 .cont-img:active {
     height: 225px;
     width: 224px;
-}
+} */
 
 .card-container {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -576,8 +566,9 @@ nav.nav-bg {
 }
 
 .front p {
-    color: #ccc;
+    color: #fff;
     font-size: 13px;
+    text-shadow: 2px 2px 3px black;
 }
 
 .front button {
@@ -593,8 +584,12 @@ nav.nav-bg {
 .back {
     background: #fff;
     color: #333;
-    padding: 20px 40px;
+    padding: 10px 20px;
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .back h2 {
@@ -603,6 +598,7 @@ nav.nav-bg {
     color: yellow;
     text-shadow: 2px 2px 3px black;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .back h2 span {
@@ -613,6 +609,7 @@ nav.nav-bg {
 .back p {
     font-size: 18px;
     color: #333;
+    text-align: center;
 }
 
 .back button {
@@ -693,7 +690,7 @@ nav.nav-bg {
     color: black;
     background: rgb(255, 255, 0, 0.80);
     border-color: white;
-    width: 305px;
+    width: 297px;
     padding: 5px 40px;
     font-size: 15px;
     margin-top: 15px;
@@ -705,11 +702,13 @@ nav.nav-bg {
     margin-top: 30px;
 }
 
-.back a {
-
-}
-
 .socials {
     display: flex;
-    bottom: 0;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
+
+.socials a {
+    align-items: flex-end;
+}
+

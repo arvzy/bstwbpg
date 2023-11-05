@@ -134,8 +134,7 @@ html {
     /* background: linear-gradient(#3073b2, #7fbad4, #b6cfda); */
     background: linear-gradient(to bottom right, black, black, yellow, yellow);
     background-attachment: fixed;
-    /* cursor: url("cursor/Help\ Select.cur"), auto; */
-
+    cursor: url("cursor/Help\ Select.cur"), auto;
 }
 
 @keyframes gradient {
